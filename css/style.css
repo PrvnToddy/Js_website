@@ -1,0 +1,1138 @@
+@import url('https://fonts.gstatic.com/s/niconne/v7/w8gaH2QvRug1_rTfnQyn2Q.woff2');
+@font-face {
+    font-family: "Niconne";
+    src: local("Niconne"), local("Niconne-Regular"), url("https://fonts.gstatic.com/s/niconne/v7/w8gaH2QvRug1_rTfnQyn2Q.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  .spinner{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+  }
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff6fa;
+    z-index: 999999;
+    }
+  .sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #ec5598;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+#headerOne{
+    background-color: #5f188a;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+}
+#headerTwo{
+    background-color: #6a1b9a;
+    font-weight: 500;
+}
+.nav.justify-content-end a{
+    color: whitesmoke;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #5f188a;
+}
+.sidenav a:active {
+    color: #5f188a;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* carousal */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #6a1b9a;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #6a1b9a;
+}
+
+.carousel-caption{
+    color: #ec5598;
+    font-family: "Niconne";
+    bottom: 20%;
+    right: 0%;
+    left: -40%;
+}
+.carousel-caption#caption-left{
+    color: #ec5598;
+    font-family: "Niconne";
+    bottom: 20%;
+    right: 0%;
+    left: 40%;
+}
+
+.carousel-caption h2{
+    font-size: 3.571em;
+}
+.carousel-caption h1{
+    font-family: "Montserrat";
+    font-size: 5.000em;
+    color: #6a1b9a;
+    font-weight: 500;
+}
+.carousel-caption p{
+    color: #000;
+    font-size: 30px;
+}
+/* Bottons*/
+.btn1 {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: #ec5598 !important;
+    padding: 15px 32px 15px 32px;
+    border: transparent;
+    text-decoration: none;
+    cursor:pointer;
+  }
+
+  .btn1.hvr-radial-out::before{
+    background: #6a1d9e;
+    text-decoration: none;
+    cursor:pointer;
+  }
+
+  .btn2 {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: #6a1d9e !important;
+    padding: 15px 30px 15px 30px;
+    border: transparent;
+    text-decoration: none;
+    cursor:pointer;
+  }
+
+  .btn2.hvr-radial-out::before{
+    background: #ec5598;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  .btn3 {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: #00bcd4 !important;
+    padding: 15px 32px 15px 32px;
+    border: transparent;
+    text-decoration: none;
+    cursor:pointer;
+  }
+
+  .btn3.hvr-radial-out::before{
+    background: #6a1d9e;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  .btn4 {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: "Montserrat";
+    color: #a59999 !important;
+    font-size: 13px;
+    font-weight: 700;
+    background: #f5f5f5 !important;
+    padding: 40px 50px 40px 50px !important;
+    border: #ffffff;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  .btn4 a{
+    color: #a59999;
+  }
+  
+  .btn4:hover{
+    background-color: #ffffff !important;
+    cursor:pointer;
+  }
+
+  /*about*/
+  .about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  .about h1{
+    font-family: "Montserrat";
+    font-size: 65px;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2") format("woff2"); 
+    text-shadow:-15px -30px #F0F0F0;
+}
+
+.simple{
+    display: block;
+height: 2px;
+width: 130px;
+    background-image: -webkit-linear-gradient( 175deg, rgba(236,85,152,0) 0%, rgba(236,85,152,0.26) 24%, rgba(236,85,152,0.5) 46%, rgb(236,85,152) 100%);
+}
+
+#aboutone{
+    margin-top: 13%;
+}
+
+.hover-in{
+	transition: .2s ease-out;
+}
+.hover-out{
+	transition: .2s ease-in;
+}
+.about p{
+    font-family: "Montserrat";
+    color: grey;
+}
+#back{
+    background-image: url('../images/image1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.about #align{
+  margin: -20px auto;
+}
+#cardtop{
+    margin-top:30px; 
+}
+figure{
+    margin: 0 0 2rem;
+    box-shadow: 4px 4px 19px 0px rgba(0,0,0,1);
+}
+.figure-img{
+    margin-bottom: -0.5rem;
+}
+
+/*about2*/
+#wrapper{
+    position: relative;
+    width:92%;
+    min-height:30vw;
+    overflow: hidden;
+  }
+  
+  .layer{
+    position: absolute;
+    width:50vw;
+    min-height: 30vw;
+    overflow: hidden;
+  }
+  
+  .layer .content-wrap{
+    position: absolute;
+    width:50vw;
+    min-height: 30vw;
+  }
+  
+  .layer .content-body{
+    width:25%;
+    position:absolute;
+    top:50%;
+    text-align: center;
+    transform:translateY(-50%);
+    color:#d9d4d1;
+  }
+  
+  .layer img{
+    position: absolute;
+    width:85%;
+    top:50%;
+    left: 42%;
+    transform:translate(-50%, -50%);
+  }
+
+  .top{
+    z-index:2;
+  }
+  
+  
+  
+  .handle{
+    position: absolute;
+    height: 50%;
+    display: block;
+    background-color: #681c98;
+    width:5px;
+    top:0;
+    left: 50%;
+    z-index:3;
+  }
+  
+  .skewed .handle{
+    top:50%;
+    transform:rotate(30deg) translateY(-50%);
+    height: 120%;
+    transform-origin:top;
+  }
+  
+  .skewed .top{
+    transform: skew(-30deg);
+    margin-left:-1000px;
+    width: calc(50vw + 1000px);
+  }
+  
+  .skewed .top .content-wrap{
+    transform: skew(30deg);
+    margin-left:1000px;
+  }
+  .jumbotron{
+    margin-bottom: 0rem !important;
+  }
+.about2 h3{
+  font-family: "Niconne";
+    color: #ec5598;
+}
+
+.about2 h1{
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.about2 p{
+  font-size: 110%;
+}
+.about2 #logo img{
+  height: 90px;
+  width: 90px;
+}
+.about2 #logo p{
+  color: #666666;
+}
+
+#plx{
+    background-image: linear-gradient(rgba(241, 241, 241, 0.4),rgba(255, 255, 255, 0.4)),url('../images/pricing-bg.jpg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .title{
+    padding: 150px;
+  }
+  .title h3{
+    font-family: "Niconne";
+      color: #ec5598;
+  }
+  .title h1{
+    font-weight: 700;
+  }
+  .card-img-top1{
+    background-image: -webkit-linear-gradient( 90deg, rgb(211,16,39) 0%, rgb(125,0,254) 0%, rgba(255,255,255,0) 100%),url('../images/index.jpg');
+    height: 270px;
+    background-repeat: no-repeat;
+    
+  }
+  .card-img-top2{
+    background-image: -webkit-linear-gradient( 90deg, rgb(125,0,254) 0%, rgb(236,85,152) 0%, rgba(255,255,255,0) 100%),url('../images/index2.jpg');
+    height: 270px;
+    background-repeat: no-repeat;
+  }
+  .card-img-top3{
+    background-image: -webkit-linear-gradient( 90deg, rgb(236,85,152) 0%, rgb(0,188,212) 0%, rgba(255,255,255,0) 100%),url('../images/index3.jpg');
+    height: 270px;
+    background-repeat: no-repeat;
+  }
+  .card-deck{
+    padding: 0px;
+  }
+  
+  .beauty-pricing-header-content {
+    position: absolute;
+    bottom: 298px;
+    left: 0;
+    color: var(--color-white);
+    width: 100%;
+    display: flex;
+    padding: 13px;
+    -ms-grid-row-align: center;
+    align-items: center;
+  }
+  .beauty-pricing-title, .beauty-pricing-price {
+    flex: 1;
+  }
+  
+  .beauty-pricing-title h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.143em;
+    letter-spacing: -2px;
+    color:#ffffff;
+  }
+  .beauty-pricing-price {
+    text-align: right;
+  }
+  
+  .beauty-pricing-title, .beauty-pricing-price {
+    flex: 1;
+  }
+  
+  .beauty-pricing-price h4 {
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  .beauty-pricing-price h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.857em;
+    color: #ffffff;
+  }
+  .beauty-pricing-price span{
+    color: #ffffff;
+  }
+  .table th,.table td{
+    color: #666666;
+  }
+
+  /*service*/
+  .service{
+    margin-top: 100px;
+  }
+  .service li.nav-item{
+    margin: 0 30px 0 0;
+  }
+  
+  #margin{
+    margin-top: 50px;
+  }
+  #v-pills-tab{
+    padding: 2.3rem !important;
+  }
+  #v-pills-tabContent{
+    padding: 0rem !important;
+  }
+  ul.nav.justify-content-center{
+    padding-left: 33px;
+  }
+  .nav-pills .nav-link{
+    border-style: none none dashed;
+    border-color: #c3c3c3;
+    color: #c3c3c3 !important;
+    padding: 1rem 1rem !important;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    color: #f38898 !important;
+  background-color: #fff !important;
+  }
+  .nav-link.btn4.active{
+    color: #ec5598 !important;
+  }
+  .nav-pills .nav-link:hover{
+    color: #f38898 !important;
+  }
+  .box{
+    margin-left: -65px;
+  }
+  .box h1{
+    text-align: center;
+  }
+  .box p{
+    color: #666666;
+  }
+  .center{
+    text-align: center;
+  }
+  .nav-link.btn4.active{
+    box-shadow: 0px 11px 16px -3px rgba(0,0,0,0.75);
+    background-color: #ffffff !important;
+  }
+  #v-pills-tabContent{
+      height: 77%;
+  }
+  #split2{
+      height: 86% !important;
+  }
+  
+/*contact*/
+#plx2{
+    background-image:url('../images/contact_header_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  .title{
+    padding: 150px;
+  }
+  .title h3{
+    font-family: "Niconne";
+      color: #ec5598;
+  }
+  .title h1{
+    font-weight: 700;
+  }
+  .contact h1{
+      color: whitesmoke;
+  }
+  .contact p{
+      color: whitesmoke;
+  }
+  .contact .col-md-auto{
+    bottom: -41px;
+  }
+  #us{
+      background-color: #5f188a;
+      height: 100%;
+  }
+  .contact h3{
+      color: whitesmoke;
+      font-family: "Montserrat";
+  }
+  #space{
+      margin-top: 25px;
+  }
+  #space.row{
+    box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.75) !important;
+  }
+  .homeDetail{
+      margin-bottom: 4rem !important;
+  }
+  .homeDetail li{
+        display: grid;
+        align-items: center;
+        margin: 0 0 20px;
+        grid-template-columns: 60px calc(100% - 60px);
+  }
+  .homeDetail li i{
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    border: 2px solid white;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 2.143em;
+    color: whitesmoke;
+  }
+  .homeDetail h6{
+      color: whitesmoke;
+  }
+  #name{
+      margin-top: 25px;
+  }
+  .maps{
+      margin-top: 315px;
+  }
+/*footer*/
+ .footer{
+     background-image: url('./../images/footer-bg.jpg');
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+ }
+ .footer h5{
+    font-family: "Montserrat";
+ }
+ .logo{
+    margin-left: 467px;
+    margin-top: 39px;
+ }
+.logo .btn2{
+    padding: 15px 115px 15px 115px;
+}
+.logo a{
+    color: whitesmoke;
+}
+#top-align{
+    margin-top: 180px;
+}
+.arrow{
+    margin-left: 617px;
+}
+
+/*media queries*/
+/*Extra Small devices */
+@media (min-width: 320px) and (max-width:576px) { 
+    .nav.justify-content-end a{
+        font: 0.8em sans-serif;
+    }
+    #headerTwo ul.nav.justify-content-end{
+        display: none;
+    }
+    .navbar{
+        padding: 0.5rem 0rem;
+    }
+    .navbar-brand{
+        margin-right: 1rem !important;
+    }
+    .carousel-caption{
+        bottom: -5%;
+        left: -30%;
+    }
+    .carousel-caption#caption-left{
+        bottom: -5%;
+        left: 30%;
+    }
+    .carousel-caption h2{
+        font-size: 1.4em;
+    }
+    .carousel-caption h1{
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .btn1{
+        font-size: 8px;
+        padding: 6px 15px 6px 15px;
+    }
+    .btn2{
+        font-size: 8px;
+        padding: 6px 15px 6px 15px;
+    }
+    .about{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .about h1{
+        font-size: 28px;
+        text-shadow: -5px -7px #F0F0F0;
+    }
+    div#cardtop.col{
+        padding-right: 10px !important;
+        padding-left: 0px !important;
+    }
+    #aboutone{
+        margin-top: 0%;
+    }
+    #cardtop{
+        margin-top: 30px;
+    }
+    section#wrapper.skewed{
+        width: 100% !important;
+    }
+    div.layer.bottom{
+        width: 100vw !important;
+    }
+    div.content-wrap{
+        width: 100vw !important;
+    }
+    div.content-body{
+        width: 100% !important;
+    }
+    .about2 img{
+        width: 100%;
+        top:75%;
+    }
+    div.title.text-center{
+        padding: 40px;
+    }
+    .card-deck{
+        width: 250px;
+        padding: 0px;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .beauty-pricing-header-content{
+        bottom: 330px;
+    }
+    .btn4{
+        font-size: 18px;
+        padding: 10px 10px 10px 10px !important;
+        border-radius: 0px;
+
+    }
+    .nav-link img{
+        width: 72px !important;
+        height: 72px !important;
+    }
+    .service li.nav-item{
+        margin: 0 47px 17px 0;
+    }
+    #split{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split2{
+        width: 289px;
+    }
+    #split3{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split3.row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .box{
+        margin-left: 5px;
+        height: 600px;
+    }
+    .box .btn2{
+        padding: 10px 15px 10px 15px !important;
+    }
+    .contact div.col-md-auto{
+        bottom: -56px;
+        margin-left: -48px;
+    }
+    .homeDetail{
+        margin-left: -30px;
+    }
+    #space{
+        margin-top: 41px;
+        box-shadow: -2px 3px 38px 14px rgba(0,0,0,0.39) !important;
+    }
+    #space row{
+        width: 150% !important;
+        margin-left: -52px !important;
+    }
+    .maps{
+        margin-top: 734px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .logo img{
+        width: 272px;
+    }
+    .logo .btn2{
+        padding: 15px 50px 15px 50px;
+        margin-left: 10px;
+    }
+    .logo a{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+    .footer{
+        height: 750px;
+    }
+    .arrow{
+        margin-left: 150px;
+    }
+}
+
+/*Small devices */
+@media (min-width: 577px) and (max-width:768px) { 
+    .nav.justify-content-end a{
+        font: 0.9em sans-serif;
+    }
+    #headerTwo ul.nav.justify-content-end{
+        display: none;
+    }
+    .navbar-brand{
+        margin-right: 7rem;
+    }
+    .carousel-caption{
+        bottom: 17%;
+        left: -40%;
+    }
+    .carousel-caption#caption-left{
+        bottom: 17%;
+        left: 40%;
+    }
+    .carousel-caption h2{
+        font-size: 1.5em;
+    }
+    .carousel-caption h1{
+        font-size: 2em;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+    }
+    .btn1{
+        font-size: 12px;
+        padding: 8px 18px 8px 18px;
+    }
+    .btn2{
+        font-size: 12px;
+        padding: 8px 18px 8px 18px;
+    }
+    .about{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .about h1{
+        font-size: 32px;
+        text-shadow: -13px -20px #F0F0F0;
+    }
+    div#cardtop.col{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    #aboutone{
+        margin-top: 5%;
+    }
+    #cardtop{
+        margin-top: 35px;
+    }
+    section#wrapper.skewed{
+        width: 100% !important;
+    }
+    .about2 p{
+        font-size: 80%;
+    }
+    div.title.text-center{
+        padding: 0px !important;
+    }
+    div.card-deck{
+        padding: 100px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    div.card{
+        flex: 1 0 50% !important;
+    }
+    .btn4{
+        font-size: 18px;
+        padding: 10px 10px 10px 10px !important;
+        border-radius: 0px;
+
+    }
+    .nav-link img{
+        width: 72px !important;
+        height: 72px !important;
+    }
+    .service li.nav-item{
+        margin: 0 47px 17px 0;
+    }
+    #split{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split2{
+        width: 240px;
+        height: 83.5% !important;
+    }
+    #split3{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split3.row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .box{
+        margin-left: -5px;
+        height: 574px;
+    }
+    .box .btn2{
+        padding: 10px 15px 10px 15px !important;
+    }
+    #plx2{
+        height: 325px;
+    }
+    .contact div.col-md-auto{
+        bottom: -17px;
+    }
+    #space row{
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .maps{
+        margin-top: 744px;
+    }
+    .logo{
+        margin-left: 183px;
+    }
+    .logo img{
+        width: 272px;
+    }
+    .logo .btn2{
+        padding: 15px 50px 15px 50px;
+        margin-left: 10px;
+    }
+    .logo a{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+    .footer{
+        height: 650px;
+    }
+    .arrow{
+        margin-left: 270px;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 769px) and (max-width:992px){ 
+    .navbar span{
+        display: none;
+    }
+    .carousel-caption{
+        bottom: 10%;
+        left: -39%;
+    }
+    .carousel-caption#caption-left{
+        bottom: 10%;
+        left: 39%;
+    }
+    .carousel-caption h2{
+        font-size: 2.571em;
+    }
+    .carousel-caption h1{
+        font-size: 3em;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+    }
+    .about{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .about h1{
+        font-size: 42px;
+        text-shadow: -13px -20px #F0F0F0;
+    }
+    div#cardtop.col{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    #aboutone{
+        margin-top: 5%;
+    }
+    #cardtop{
+        margin-top: 35px;
+    }
+    div.title.text-center{
+        padding: 0px !important;
+    }
+    div.card-deck{
+        padding: 100px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    div.card{
+        flex: 1 0 30% !important;
+    }
+    .btn4{
+        font-size: 18px;
+        padding: 10px 10px 10px 10px !important;
+        border-radius: 0px;
+
+    }
+    .nav-link img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .service li.nav-item{
+        margin: 0px 100px 60px 21px;
+    }
+    #split{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split2{
+        width: 329px;
+        height: 85% !important;
+    }
+    #split3{
+        flex:0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #split3.row{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .box{
+        margin-left: -5px;
+        height: 470px;
+    }
+    .box .btn2{
+        padding: 10px 15px 10px 15px !important;
+    }
+    #plx2{
+        height: 350px;
+    }
+    div#space.container{
+        margin-top: 26px !important;
+    }
+    .maps{
+        margin-top: 720px;
+    }
+    .logo{
+        margin-left: 273px;
+    }
+    .logo img{
+        width: 272px;
+    }
+    .logo .btn2{
+        padding: 15px 50px 15px 50px;
+        margin-left: 10px;
+    }
+    .logo a{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+    .footer{
+        height: 550px;
+    }
+    .arrow{
+        margin-left: 350px;
+    }
+}
+
+/*Large devices*/
+@media (min-width: 993px) { 
+    .navbar span{
+        display: none;
+    }
+ }
+
+/*Extra large devices*/
+@media (min-width: 1200px) { 
+    .navbar span{
+        display: none;
+    }
+ }
